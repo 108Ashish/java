@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation Example</title>
+</head>
+<body style="background-color: black; color: aliceblue;">
+    <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+    </div>
+</body>
+<script>
+    // Select the parent element
+    const parent = document.querySelector(".parent");
+    console.log(parent);
+
+    // Log the children of the parent element
+    console.log(parent.children);
+
+    // Access the second child and change its color and log its content
+    console.log(parent.children[1].innerHTML);
+    parent.children[1].style.color = 'orange';
+    console.log("NODE:",parent.chilNodes)
+</script>
+</html>
+ 

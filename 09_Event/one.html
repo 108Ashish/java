@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Event</title>
+    <style>
+        img {
+            width: 100px; /* Set the image width */
+            height: auto; /* Maintain aspect ratio */
+        }
+    </style>
+</head>
+<body>
+    <h2>Amazing Image</h2>
+    <div>
+        <ul>
+            <li><img id="amazingImage" src="https://media.istockphoto.com/id/1398291688/vector/mass-surveillance.jpg?s=612x612&w=0&k=20&c=KfRX8xA2EhKEl7iSPS7ekMEGPfEggpgmL3mR49B3KDA="></li>
+            <li><img id="good" src="https://media.istockphoto.com/id/1398288588/vector/internet-tracking.jpg?s=612x612&w=0&k=20&c=hTwsRB9HjYnsoPY_bvrprxCx-3WAekqfTksgiqJoFAs="></li>
+            <li><img id="niceImage" src="https://media.istockphoto.com/id/2149807625/photo/man-combines-nature-with-cybersecurity-in-glass-pod.jpg?s=612x612&w=0&k=20&c=xotayYRgkRsw3tP54UPYTWUQJqRcjWH_i9NXQJn1S-8="></li>
+            
+        </ul>
+    </div>
+
+    <script>
+        document.getElementById("amazingImage").addEventListener("click", function(e) {
+           console.log(e)
+        },false);
+        //timestamp,type,defultPrevent
+        //target,toElement,srcElement,currentTarget
+        //clientX,clientY
+    </script>
+</body>
+</html>

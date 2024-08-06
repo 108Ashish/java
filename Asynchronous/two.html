@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel='stylesheet' href="style.css">
+  <title>Number guessing Game</title>
+</head>
+<body style="background-color:black; color:#fff">
+  <h1>Start Should change the Backgroundcolour every second</h1>
+
+  <button id='start'>Start</button>
+  <button id='end'>End</button>
+  
+  <script>
+    let colorInterval;
+
+    const randomColor = function() {
+      const hex = '0123456789ABCDEF';
+      let color = '#';
+      for (let i = 0; i < 6; i++) {
+        color += hex[Math.floor(Math.random() * 16)];
+      }
+      return color;
+    }
+
+    const startChangingColor = function() {
+      if (!colorInterval) {
+        colorInterval = setInterval(function() {
+          document.body.style.backgroundColor = randomColor();
+        }, 1000);
+      }
+    }
+
+    const stopChangingColor = function() {
+      clearInterval(colorInterval);
+      colorInterval = null;
+    }
+
+    document.querySelector('#start').addEventListener('click', startChangingColor);
+    document.querySelector('#end').addEventListener('click', stopChangingColor);
+  </script>
+</body>
+</html>

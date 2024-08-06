@@ -1,0 +1,103 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+  }
+  
+  /* Navigation Bar */
+  nav {
+    width: 100%;
+    background-color: #333;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+  
+  /* Container */
+  .canva {
+    text-align: center;
+    padding: 2rem;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  /* Title */
+  .canva h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Form */
+  form {
+    margin-top: 1rem;
+  }
+  
+  form p {
+    margin: 1rem 0;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+  
+  form input {
+    width: calc(100% - 22px);
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  form button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1rem;
+  }
+  
+  form button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Result and Guide */
+  #result {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  #Wight-guide {
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  h3 {
+    font-size: 1rem;
+    color: #666;
+    margin: 0.5rem 0;
+  }
+  
